@@ -7,7 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<header class='mod-header'>
+	  <div class='layout-wrap'>
+	    <h1><a href="http://turing.io">Turing School of Software & Design</a></h1>
+	    <nav>
+	      <ul>
+	        <li><%= link_to "Daily Calendar", daily_calendar_path %></li>
+	        <li><%= link_to "Weekly Calendar", weekly_calendar_path %></li>
+	        <li><%= link_to "Warmup", warmup_path %></li>
+	        <li><%= link_to "Leaderboard", leaderboard_path %></li>
+	        <li><%= link_to "Social", social_path %></li>
+	      </ul>
+	    </nav>
+	  </div>
+	</header>
+	
 <%= yield %>
 
 </body>
