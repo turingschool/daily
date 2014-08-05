@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  root 'pages#daily_calendar'
+  get 'daily_calendar' => 'pages#daily_calendar'
+  get 'weekly_calendar' => 'pages#weekly_calendar'
+  get 'warmup' => 'pages#warmup'
+  get 'leaderboard' => 'pages#leaderboard'
+  get 'social' => 'pages#social'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
